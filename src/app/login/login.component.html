@@ -1,0 +1,12 @@
+
+<form class="form-signin">
+  <mat-form-field class="signin-full-width">
+    <input matInput name="username" placeholder="User Name" [(ngModel)] = "user.username" type="text" value="" required autofocus>
+  </mat-form-field>
+
+  <mat-form-field class="signin-full-width">
+    <input matInput name="password" placeholder="Password" [(ngModel)] = "user.password" type="password" value="" required>
+  </mat-form-field>
+
+  <button mat-raised-button (click)="validateLogin();">Sign in</button>
+</form>
